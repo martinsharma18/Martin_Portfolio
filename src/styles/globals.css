@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 font-jakarta selection:bg-blue-500/30;
+  }
+
+  .dark body {
+    @apply bg-[#050505] text-white font-jakarta;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-br from-gray-900 via-gray-700 to-gray-500 dark:from-white dark:via-gray-300 dark:to-gray-600 font-black;
+  }
+
+  .glass-card {
+    @apply bg-white/40 dark:bg-white/[0.03] backdrop-blur-2xl border border-black/5 dark:border-white/10 shadow-xl dark:shadow-2xl shadow-black/5 dark:shadow-black/30;
+  }
+
+  .mesh-gradient {
+    background-image: radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+      radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+      radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+  }
+}
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  @keyframes bounce-x {
+
+    0%,
+    100% {
+      transform: translateX(-25%);
+    }
+
+    50% {
+      transform: translateX(0);
+    }
+  }
+
+  .animate-bounce-x {
+    animation: bounce-x 1.5s infinite;
+  }
+
+  .smooth-transition {
+    @apply transition-all duration-500;
+  }
+
+  .float-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+}
