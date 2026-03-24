@@ -71,7 +71,7 @@ const Hero = () => {
               Explore Projects
             </motion.a>
             <motion.a
-              href="/projects/MARTIN SHARMA .NET.pdf"
+              href="/projects/Martin Sharma.pdf"
               download
               className="px-8 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-800 text-gray-900 dark:text-white font-bold backdrop-blur-sm hover:bg-gray-50 dark:hover:bg-white/5 transition-all flex items-center gap-2"
               whileHover={{ scale: 1.05, y: -2 }}
