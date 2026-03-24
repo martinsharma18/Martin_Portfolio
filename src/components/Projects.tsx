@@ -5,42 +5,50 @@ import Image from 'next/image';
 const Projects = () => {
   const projects = [
     {
-      title: "Blockchain Charity Platform",
-      description: "Decentralized charity platform on Ethereum testnet with Solidity smart contracts, Django REST API admin dashboard, Next.js frontend, and Web3 wallet connectivity.",
-      technologies: ["Solidity", "Next.js", "Django REST", "Ethers.js", "IPFS"],
-      github: "https://github.com/martinsharma18/Blockchain-Project.git",
-      image: "/projects/mainpage.png",
+      title: "Tuition Platform (Tutor Hub)",
+      description: "A professional, full-stack application designed to bridge the gap between parents/students and qualified tutors. Features include user profiles for teachers, parents, and admins, tuition listings, tutor applications, and an admin dashboard.",
+      technologies: ["C#", "ASP.NET Core", "React", "PostgreSQL", "Redux Toolkit", "Tailwind CSS"],
+      github: "https://github.com/martinsharma18/Tutor_Hub",
+      image: "/projects/t.png",
+    },
+    {
+      title: "Healthcare Management System",
+      description: "A full-stack healthcare management system built with ASP.NET Core MVC. Features admin dashboards, hospital and patient management, authentication, and role-based access control.",
+      technologies: ["C#", "ASP.NET Core", "MVC", "HTML", "CSS", "JavaScript"],
+      github: "https://github.com/martinsharma18/HealthcareSystem",
+      image: "/projects/image.png",
+    },
+
+    {
+      title: "Raw Endurance E-commerce",
+      description: "A full-featured e-commerce platform for fitness and sports equipment, with secure payment processing and inventory management.",
+      technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
+      github: "https://github.com/kushal2060/e-commerce",
+      image: "/projects/e-com.png",
+      demo: "https://raw-endurance.vercel.app"
     },
     {
       title: "Portfolio Website",
       description: "A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features smooth animations and interactive components.",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      github: "https://github.com/martinsharma18/Portofolio.git",
+      github: "https://github.com/martinsharma18/Martin_Portfolio",
       image: "/projects/image.png",
     },
     {
-      title: "KantipurFitness",
-      description: "A comprehensive fitness platform built with modern web technologies, featuring workout tracking, nutrition planning, and community features.",
-      technologies: ["React", "Node.js", "MongoDB", "Express"],
-      github: "https://github.com/martinsharma18/KantipurFitness.git",
-      image: "/projects/kantipur-fitness.png",
-      demo: "https://kantipur-fitness.vercel.app"
+      title: "Static Portfolio",
+      description: "A foundational personal portfolio built with pure HTML and CSS, showcasing core web development skills and clean, responsive design principles.",
+      technologies: ["HTML", "CSS"],
+      github: "https://github.com/martinsharma18/portfolio",
+      image: "/projects/goverment.png",
     },
     {
-      title: "Raw Endurance E-commerce",
-      description: "A full-featured e-commerce platform for fitness and sports equipment, with secure payment processing and inventory management.",
-      technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
-      github: "https://github.com/kushal2060/e-commerce.git",
-      image: "/projects/e-com.png",
-      demo: "https://raw-endurance.vercel.app"
+      title: "Tic Tac Toe Game",
+      description: "A fun, interactive browser-based Tic Tac Toe game with a clean UI. Built with vanilla HTML, CSS, and JavaScript — no frameworks needed.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      github: "https://github.com/martinsharma18/tic_tac_toe",
+      image: "/projects/mainpage.png",
     },
-    {
-      title: "Interactive Government Site",
-      description: "A modern government website prototype focusing on user experience and accessibility, featuring interactive service portals.",
-      technologies: ["Figma"],
-      figma: "https://www.figma.com/proto/ArXOveVBO4foWdEQpIdQ6B/Government-Site?node-id=5-196",
-      image: "/projects/goverment.png"
-    }
+
   ];
 
   return (
@@ -132,6 +140,7 @@ const Projects = () => {
                         </svg>
                       </a>
                     )}
+
                   </div>
                 </div>
               </div>
