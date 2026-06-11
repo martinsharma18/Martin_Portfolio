@@ -4,13 +4,14 @@ import Image from 'next/image';
 
 const About: React.FC = () => {
   const skills = [
-    { category: 'Languages', items: ['C#', 'JavaScript', 'TypeScript', 'Python', 'SQL', 'HTML5', 'CSS3'] },
-    { category: 'Backend', items: ['.NET Core', 'ASP.NET Web API', 'Node.js', 'Express.js', 'Entity Framework', 'RESTful APIs'] },
-    { category: 'Frameworks & Tools', items: ['Git/GitHub', 'Docker', 'Postman', 'Visual Studio', 'VS Code', 'Azure', 'Vercel'] },
+    { category: 'Languages', items: ['C#', 'JavaScript', 'Python', 'SQL', 'HTML5', 'CSS3', 'TypeScript'] },
+    { category: 'Databases', items: ['SQL Server', 'PostgreSQL', 'MySQL', 'MongoDB'] },
+    { category: 'Frameworks', items: ['ASP.NET Core', 'Web API', 'MVC', 'React', 'Entity Framework', 'RESTful APIs', 'Node.js', 'Express.js', 'Dapper'] },
+    { category: 'Tools & Concepts', items: ['Git', 'Postman', 'Clean Architecture', 'CQRS', 'JWT', 'OAuth', 'Azure', 'Vercel', 'Git/GitHub', 'Docker', 'Visual Studio', 'VS Code'] },
   ];
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-black">
+    <section id="about" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -51,8 +52,8 @@ const About: React.FC = () => {
 
             <div className="grid grid-cols-2 gap-4">
               <div className="glass-card p-6 rounded-3xl text-center">
-                <h4 className="text-3xl font-black gradient-text">6+</h4>
-                <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mt-2">Months Exp</p>
+                <h4 className="text-3xl font-black gradient-text">1+</h4>
+                <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mt-2">Years Exp</p>
               </div>
               <div className="glass-card p-6 rounded-3xl text-center">
                 <h4 className="text-3xl font-black gradient-text">5+</h4>

@@ -4,27 +4,27 @@ import { motion } from 'framer-motion';
 const Experience = () => {
     const experiences = [
         {
-            company: "Connexica Pvt. Ltd",
-            role: "Associate .NET Developer",
-            startDate: "Jan 2025",
-            endDate: "Present",
-            totalDuration: "3 Months",
-            description: "Working as an Associate Developer focusing on scalable backend services and API optimization using .NET Core and Entity Framework.",
-            skills: [".NET Core", "SQL Server", "Web API"]
+            company: "Naya Code Pvt. Ltd.",
+            role: ".NET Intern / Trainee",
+            startDate: "Aug 2025",
+            endDate: "June 2026",
+            totalDuration: "11 Months",
+            description: "Built scalable API for a Real Estate Model with RBAC. Contributed to Bhoomika land management and developed banking-grade digital KYC using ASP.NET Core.",
+            skills: [".NET Core", "Entity Framework", "PostgreSQL", "React", "OAuth"]
         },
         {
-            company: "Connexica Pvt. Ltd",
-            role: ".NET Developer Intern",
-            startDate: "Oct 2024",
-            endDate: "Dec 2024",
-            totalDuration: "3 Months",
-            description: "Completed an intensive internship focusing on C# fundamentals, ASP.NET MVC, and database management systems.",
-            skills: ["C#", "ASP.NET MVC", "Entity Framework"]
+            company: "Connexica Technologies",
+            role: ".NET Intern",
+            startDate: "April 2025",
+            endDate: "July 2025",
+            totalDuration: "4 Months",
+            description: "Developed backend APIs using ASP.NET Core Web API. Wrote SQL queries, tested endpoints using Postman, and assisted in database design.",
+            skills: ["Web API", "SQL Server", "Postman"]
         }
     ];
 
     return (
-        <section id="experience" className="py-20 bg-white dark:bg-black">
+        <section id="experience" className="py-20 relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

@@ -7,19 +7,16 @@ const Hero = () => {
     { line: '// Martin Sharma Profile', color: 'text-[#6a9955] italic' },
     { line: 'public class Martin : BackendEngineer {', color: 'text-[#4ec9b0]' },
     { line: '  public string Name = "Martin Sharma";', color: 'text-[#ce9178]' },
-    { line: '  public string Role = "Associate .NET Developer";', color: 'text-[#ce9178]' },
+    { line: '  public string Role = "Backend Developer";', color: 'text-[#ce9178]' },
     { line: '  public string[] Skills = {', color: 'text-[#9cdcfe]' },
-    { line: '    ".NET Core", "C#", "SQL Server"', color: 'text-[#ce9178]' },
+    { line: '    "ASP.NET Core", "C#", "PostgreSQL"', color: 'text-[#ce9178]' },
     { line: '  };', color: 'text-[#9cdcfe]' },
     { line: '  public string Passion = "Building Scalable APIs";', color: 'text-[#ce9178]' },
     { line: '}', color: 'text-[#dcdcaa]' },
   ];
 
   return (
-    <section id="home" className="min-h-screen flex items-center py-20 bg-white dark:bg-[#050505] relative overflow-hidden">
-      {/* Decorative Background Elements */}
-      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-500/10 rounded-full blur-[120px] animate-pulse" />
-      <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-500/10 rounded-full blur-[120px] animate-pulse" />
+    <section id="home" className="min-h-screen flex items-center py-20 relative overflow-hidden">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center relative z-10">
         <motion.div

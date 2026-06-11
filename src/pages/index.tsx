@@ -8,6 +8,7 @@ import Education from '@/components/Education';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import ThreeBackground from '@/components/ThreeBackground';
 
 export default function Home() {
   return (
@@ -18,8 +19,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <ThreeBackground />
       <Navbar />
-      <main className="min-h-screen bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-black text-gray-900 dark:text-white">
+      <main className="min-h-screen text-gray-900 dark:text-white">
         <Hero />
         <About />
         <Experience />
